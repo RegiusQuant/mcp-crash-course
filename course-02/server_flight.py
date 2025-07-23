@@ -67,4 +67,5 @@ def send_confirmation(booking_id: str, email: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run()
+    # mcp.run()
+    mcp.run(transport="sse", host="127.0.0.1", port=8000)
